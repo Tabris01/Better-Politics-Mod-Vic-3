@@ -419,8 +419,8 @@ bpm_frankfurt_parliament_events.5 = {
 			text = austria_boycott_tt
 			if = {
 				limit = { 
-					global_var:bpm_frankfurt_parliament_voting_law_chosen = law_type:law_census_voting 
-					c:AUS = {
+					global_var:bpm_frankfurt_parliament_voting_law_chosen = law_type:law_census_voting }	#Missing bracket added
+					c:AUS = {										#I have removed this bit in my version, might not be necessary. Might also cause problems since the flag appl. is specified to AUS
 						NOT = { has_variable = boycotting_frankfurt }
 						NOR = {
 							any_interest_group = {
